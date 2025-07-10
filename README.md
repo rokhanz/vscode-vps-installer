@@ -33,6 +33,7 @@ chmod +x install-vscode.sh
 ```
 
 # ✨ Fitur Utama
+```
 ✅ Deteksi OS, vCPU, RAM, Disk
 ✅ Rekomendasi paket (A/B/C) sesuai spesifikasi
 ✅ Konfirmasi interaktif
@@ -41,7 +42,7 @@ chmod +x install-vscode.sh
 ✅ Dukungan Blackbox AI & ChatGPT
 ✅ Markdown, Emoji, Draw.io, Mermaid
 ✅ MIT License, open-source
-
+```
 ---
 
 # 🙌 Support Me
