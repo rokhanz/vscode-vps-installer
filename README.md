@@ -10,26 +10,24 @@
 
 ## 🛠️ Cara Install
 
+**Clone versi terbaru:**
 ```bash
-
 git clone https://github.com/rokhanz/vscode-vps-installer.git
 cd vscode-vps-installer
-
+chmod +x vscode-install.sh
+./vscode-install.sh
 ```
-
-# Pilih tag versi tertentu (opsional)
+**Clone versi tertentu (misalnya v1.0.0):**
 ```bash
-git checkout tags/v1.0.0
-```
-
-# Jadikan script executable
-```bash
-chmod +x install-vscode.sh
+git clone --branch v1.0.0 https://github.com/rokhanz/vscode-vps-installer.git
+cd vscode-vps-installer
+chmod +x vscode-install.sh
+./vscode-install.sh
 ```
 
 # Jalankan script
 ```bash
-./install-vscode.sh
+./vscode-install.sh
 ```
 
 # ✨ Fitur Utama
