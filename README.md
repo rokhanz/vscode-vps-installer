@@ -41,13 +41,14 @@ chmod +x install-vscode.sh
 ✅ Dukungan Blackbox AI & ChatGPT
 ✅ Markdown, Emoji, Draw.io, Mermaid
 ✅ MIT License, open-source
+
 ---
 
 # 🙌 Support Me
-[![Saweria](https://img.shields.io/badge/Saweria-Donate-orange)](https://saweria.co/rokhanz)
-Binance ID: 114501136
-OKX UID: 647414010530652202
-ETH Wallet: 0x6c850ac516a7dcffa51e573bcf0736b72621b3e4
+- [![Saweria](https://img.shields.io/badge/Saweria-Donate-orange)](https://saweria.co/rokhanz)
+- Binance ID: 114501136
+- OKX UID: 647414010530652202
+- ETH Wallet: 0x6c850ac516a7dcffa51e573bcf0736b72621b3e4
 
 📝 License
 This project is licensed under the MIT License – see the LICENSE file for details.
