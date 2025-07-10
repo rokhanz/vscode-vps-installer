@@ -32,17 +32,18 @@ chmod +x install-vscode.sh
 ./install-vscode.sh
 ```
 
-#✨ Fitur Utama
+# ✨ Fitur Utama
 >✅ Deteksi OS, vCPU, RAM, Disk
->✅ Rekomendasi paket (A/B/C) sesuai spesifikasi
->✅ Konfirmasi interaktif
->✅ Validasi kapasitas RAM
->✅ Install VS Code + extensions verified
->✅ Dukungan Blackbox AI & ChatGPT
->✅ Markdown, Emoji, Draw.io, Mermaid
->✅ MIT License, open-source
+✅ Rekomendasi paket (A/B/C) sesuai spesifikasi
+✅ Konfirmasi interaktif
+✅ Validasi kapasitas RAM
+✅ Install VS Code + extensions verified
+✅ Dukungan Blackbox AI & ChatGPT
+✅ Markdown, Emoji, Draw.io, Mermaid
+✅ MIT License, open-source
+---
 
-#🙌 Support Me
+# 🙌 Support Me
 [![Saweria](https://img.shields.io/badge/Saweria-Donate-orange)](https://saweria.co/rokhanz)
 Binance ID: 114501136
 OKX UID: 647414010530652202
