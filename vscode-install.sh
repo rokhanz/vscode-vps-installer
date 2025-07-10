@@ -5,6 +5,8 @@
 # License: MIT
 # Version: 1.0.0
 
+clear
+sleep 2
 # ASCII Banner Gradasi
 echo -e "\e[90m$$$$$$$\   $$$$$$\  $$\   $$\ $$\   $$\  $$$$$$\  $$\   $$\ $$$$$$$$\\"
 echo -e "\e[90m$$  __$$\ $$  __$$\ $$ | $$  |$$ |  $$ |$$  __$$\ $$$\  $$ |\____$$  |"
@@ -16,6 +18,32 @@ echo -e "\e[97m$$ |  $$ | $$$$$$  |$$ | \$$\ $$ |  $$ |$$ |  $$ |$$ | \$$ |$$$$$
 echo -e "\e[0m\__|  \__| \______/ \__|  \__|\__|  \__|\__|  \__|\__|  \__|\________|"
 
 set -e
+sleep 2
+# 🟢 Validasi apakah VS Code CLI sudah terpasang
+if command -v code >/dev/null 2>&1; then
+  echo "✅ Visual Studio Code CLI sudah terpasang."
+else
+  echo "🔹 Visual Studio Code belum terpasang. Memulai instalasi..."
+  # Tambahkan repo Microsoft
+  wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+  sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
+  sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+  rm -f packages.microsoft.gpg
+
+  sudo apt update
+  sudo apt install -y code
+fi
+
+# 🟢 Validasi apakah desktop file ada untuk GUI
+if [ -f "/usr/share/applications/code.desktop" ]; then
+  echo "✅ Visual Studio Code GUI Desktop Integration sudah terpasang."
+else
+  echo "🔹 Visual Studio Code Desktop Integration belum ada. Memasang .deb resmi..."
+  wget -O vscode-latest.deb "https://update.code.visualstudio.com/latest/linux-deb-x64/stable"
+  sudo apt install -y ./vscode-latest.deb
+  rm vscode-latest.deb
+fi
+sleep 1
 
 # 🟢 Fungsi deteksi RAM dalam GB
 detect_ram() {
