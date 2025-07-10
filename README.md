@@ -33,7 +33,7 @@ chmod +x install-vscode.sh
 ```
 
 # ✨ Fitur Utama
->✅ Deteksi OS, vCPU, RAM, Disk
+✅ Deteksi OS, vCPU, RAM, Disk
 ✅ Rekomendasi paket (A/B/C) sesuai spesifikasi
 ✅ Konfirmasi interaktif
 ✅ Validasi kapasitas RAM
